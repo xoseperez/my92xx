@@ -1,0 +1,24 @@
+{
+    "name": "my92xx",
+    "keywords": "my92xx,led",
+    "description": "MY9291 and MY9231 LED driver library for Arduino AVR and ESP8266",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/xoseperez/my92xx.git"
+    },
+    "version": "3.0.0",
+    "license": "GPL-3.0",
+    "frameworks": "arduino",
+    "platforms": ["atmelavr", "espressif8266"],
+    "dependencies": [
+    ],
+    "authors": {
+        "name": "Xose Perez",
+        "email": "xose.perez@gmail.com",
+        "url": "http://tinkerman.cat",
+        "maintainer": true
+    },
+    "examples": [
+        "examples/*/*.cpp"
+    ]
+}
