@@ -199,7 +199,7 @@ my92xx::my92xx(my92xx_model_t model, unsigned char chips, unsigned char di, unsi
     } else if (_model == MY92XX_MODEL_MY9231) {
         _channels = 3 * _chips;
     }
-    _value = new uint16_t(_channels);
+    _value = (uint16_t*) malloc (sizeof(uint16_t) * _channels);
     for (unsigned char i=0; i<_channels; i++) {
         _value[i] = 0;
     }
