@@ -7,5 +7,7 @@ cache:
   - "~/.platformio"
 install:
 - pip install -U platformio
+before_script:
+- cp examples/esp/credentials.sample.h examples/esp/credentials.h
 script:
 - pio run -e test -e uno
