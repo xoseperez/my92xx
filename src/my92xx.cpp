@@ -1,10 +1,10 @@
 /*
 
-MY92XX LED Driver Arduino library 3.0.0
+MY92XX LED Driver Arduino library 3.0.1
 Based on the C driver by MaiKe Labs
 
 Copyright (c) 2016 - 2026 MaiKe Labs
-Copyright (c) 2017 - Xose Pérez (for the library)
+Copyright (C) 2017 - 2018 Xose Pérez for the Arduino compatible library
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -199,7 +199,7 @@ my92xx::my92xx(my92xx_model_t model, unsigned char chips, unsigned char di, unsi
     } else if (_model == MY92XX_MODEL_MY9231) {
         _channels = 3 * _chips;
     }
-    _value = new uint16_t(_channels);
+    _value = new uint16_t[_channels];
     for (unsigned char i=0; i<_channels; i++) {
         _value[i] = 0;
     }

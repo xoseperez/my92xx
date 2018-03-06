@@ -3,6 +3,10 @@
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [3.0.1] 2018-03-06
+### Fixed
+- Buffer overflow bug in constructor (thanks to @a4711 and @gkaindl)
+
 ## [3.0.0] 2017-11-13
 ### Changed
 - Class name changed from my9291 to my92xx, that's why there is a new repo
