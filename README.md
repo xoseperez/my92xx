@@ -2,6 +2,11 @@
 
 Arduino library for the Taiwan Mingyang (MY-Semi) MY9291 and MY9231 LED drivers. Based in the C driver by Maike Labs, included in the [Noduino SDK](https://github.com/icamgo/noduino-sdk).
 
+[![version](https://img.shields.io/badge/version-3.0.1-brightgreen.svg)](CHANGELOG.md)
+[![travis](https://travis-ci.org/xoseperez/my92xx.svg?branch=master)](https://travis-ci.org/xoseperez/my92xx)
+[![donate](https://img.shields.io/badge/donate-PayPal-blue.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=xose%2eperez%40gmail%2ecom&lc=US&no_note=0&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHostedGuest)
+[![twitter](https://img.shields.io/twitter/follow/xoseperez.svg?style=social)](https://twitter.com/intent/follow?screen_name=xoseperez)
+
 Tested with Arduino Core for ESP8266.
 
 ## Example

@@ -1,6 +1,7 @@
 /*
 
 MY92XX LED Driver Arduino library 3.0.1
+Based on the C driver by MaiKe Labs
 
 Copyright (c) 2016 - 2026 MaiKe Labs
 Copyright (C) 2017 - 2018 Xose Pérez for the Arduino compatible library
