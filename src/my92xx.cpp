@@ -1,6 +1,6 @@
 /*
 
-MY92XX LED Driver Arduino library 3.0.1
+MY92XX LED Driver Arduino library 3.0.2
 Based on the C driver by MaiKe Labs
 
 Copyright (c) 2016 - 2026 MaiKe Labs
@@ -55,10 +55,10 @@ void my92xx::_write(unsigned int data, unsigned char bit_length) {
 
     for (unsigned int i = 0; i < bit_length / 2; i++) {
         digitalWrite(_pin_dcki, LOW);
-        digitalWrite(_pin_di, (data & mask));
+        digitalWrite(_pin_di, (data & mask) ? HIGH : LOW);
         digitalWrite(_pin_dcki, HIGH);
         data = data << 1;
-        digitalWrite(_pin_di, (data & mask));
+        digitalWrite(_pin_di, (data & mask) ? HIGH : LOW);
         digitalWrite(_pin_dcki, LOW);
         digitalWrite(_pin_di, LOW);
         data = data << 1;

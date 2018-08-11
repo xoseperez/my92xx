@@ -6,7 +6,7 @@
         "type": "git",
         "url": "https://github.com/xoseperez/my92xx.git"
     },
-    "version": "3.0.1",
+    "version": "3.0.2",
     "license": "GPL-3.0",
     "frameworks": "arduino",
     "platforms": ["atmelavr", "espressif8266"],
