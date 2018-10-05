@@ -19,6 +19,6 @@
         "maintainer": true
     },
     "examples": [
-        "examples/*/*.cpp"
+        "examples/*/*.ino"
     ]
 }

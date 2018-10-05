@@ -1,0 +1,52 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+my92xx_cmd_t KEYWORD1
+
+#######################################
+# Classes (KEYWORD1)
+#######################################
+
+my92xx	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+getChannels KEYWORD2
+setChannel KEYWORD2
+getChannel KEYWORD2
+setState KEYWORD2
+getState KEYWORD2
+update KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+MY92XX_MODEL_MY9291 LITERAL1
+MY92XX_MODEL_MY9231 LITERAL1
+
+MY92XX_CMD_ONE_SHOT_DISABLE LITERAL1
+MY92XX_CMD_ONE_SHOT_ENFORCE LITERAL1
+
+MY92XX_CMD_REACTION_FAST LITERAL1
+MY92XX_CMD_REACTION_SLOW LITERAL1
+
+MY92XX_CMD_BIT_WIDTH_16 LITERAL1
+MY92XX_CMD_BIT_WIDTH_14 LITERAL1
+MY92XX_CMD_BIT_WIDTH_12 LITERAL1
+MY92XX_CMD_BIT_WIDTH_8 LITERAL1
+
+MY92XX_CMD_FREQUENCY_DIVIDE_1 LITERAL1
+MY92XX_CMD_FREQUENCY_DIVIDE_4 LITERAL1
+MY92XX_CMD_FREQUENCY_DIVIDE_16 LITERAL1
+MY92XX_CMD_FREQUENCY_DIVIDE_64 LITERAL1
+
+MY92XX_CMD_SCATTER_APDM LITERAL1
+MY92XX_CMD_SCATTER_PWM LITERAL1
