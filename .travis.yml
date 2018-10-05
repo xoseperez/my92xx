@@ -1,13 +1,12 @@
 language: python
 python:
-- '2.7'
+  - '2.7'
 sudo: false
 cache:
   directories:
-  - "~/.platformio"
+    - "~/.platformio"
 install:
-- pip install -U platformio
-before_script:
-- cp examples/esp/credentials.sample.h examples/esp/credentials.h
+  - pip install -U platformio
 script:
-- pio run -e test -e uno
+  - pushd examples/esp8285_rainbow && cp credentials.sample.h credentials.h && pio run && popd
+  - pushd examples/uno_rainbow && pio run && popd

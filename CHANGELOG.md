@@ -3,6 +3,10 @@
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [3.0.3] 2018-10-05
+### Changed
+- Move license to LGPL-3.0
+
 ## [3.0.2] 2018-08-11
 ### Fixed
 - Fix mask math when using 16bit (thanks to @kduve)
