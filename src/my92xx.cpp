@@ -159,13 +159,13 @@ unsigned char my92xx::getChannels() {
 }
 
 void my92xx::setChannel(unsigned char channel, unsigned int value) {
-    if (0 <= channel && channel < _channels) {
+    if (channel < _channels) {
         _value[channel] = value;
     }
 }
 
 unsigned int my92xx::getChannel(unsigned char channel) {
-    if (0 <= channel && channel < _channels) {
+    if (channel < _channels) {
         return _value[channel];
     }
     return 0;
@@ -185,13 +185,12 @@ void my92xx::update() {
 
 // -----------------------------------------------------------------------------
 
-my92xx::my92xx(my92xx_model_t model, unsigned char chips, unsigned char di, unsigned char dcki, my92xx_cmd_t command) {
+my92xx::my92xx(my92xx_model_t model, unsigned char chips, unsigned char di, unsigned char dcki, my92xx_cmd_t command) : _command(command) {
 
     _model = model;
     _chips = chips;
 	_pin_di = di;
 	_pin_dcki = dcki;
-    _command = command;
 
     // Init channels
     if (_model == MY92XX_MODEL_MY9291) {
